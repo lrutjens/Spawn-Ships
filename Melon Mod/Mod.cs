@@ -32,7 +32,7 @@ namespace MyProject
                         i++;
                     }
                     i = 0;
-                    LoggerInstance.Msg("You just pressed T");
+                    LoggerInstance.Msg("You just spawned " + shipsToSpawn + " ships!");
 
                 }
 
