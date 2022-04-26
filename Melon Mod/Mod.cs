@@ -35,6 +35,20 @@ namespace MyProject
                     LoggerInstance.Msg("You just spawned " + shipsToSpawn + " ships!");
 
                 }
+            if (Input.GetKeyDown(KeyCode.F2))
+            {
+                if (NetworkManager.instance.IsRoomPrivate() == true)
+                {
+                    int teamId = -1;
+                    while (i < 10)
+                    {
+                        TeamManager.instance.GetTeam(teamId).TryProduceShip();
+                        i++;
+                    }
+                    i = 0;
+                    LoggerInstance.Msg("You just spawned " + shipsToSpawn + " ships!");
+
+                }
 
             }
         }
