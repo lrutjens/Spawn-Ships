@@ -1,7 +1,7 @@
 using System.Runtime.InteropServices;
 using MelonLoader;
 using UnityEngine;
-using MyProject;
+using Melon_Mod;
 
 [assembly: MelonInfo(typeof(MyMod), "SpawnShip", "1.0.0.0", "Anrgy Fool")]
 [assembly: MelonGame("TrassGames", "GodsOfGravity")]
